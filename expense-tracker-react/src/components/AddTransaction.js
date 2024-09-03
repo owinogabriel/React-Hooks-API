@@ -7,7 +7,7 @@ import React from 'react'
 <form>
   <div className='form-control'>
     <label for="text">Text</label>
-    <input type='text' placeholder='Enter text...'
+    <input type='text' placeholder='Enter text...' />
   </div>
 </form>
     </>
