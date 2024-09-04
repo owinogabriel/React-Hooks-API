@@ -1,4 +1,13 @@
-.fa {
-  border-radius: 20px;
+.btn-outline-dark{
+  border: 1px solid black;
   text-decoration: none;
+  color: black;
+  border-radius: 0.5rem;
+}
+.btn-outline-dark:hover{
+  background-color: black;
+  color: aliceblue;
+}
+.navbar-nav a{
+  font-size: 18px;
 }
