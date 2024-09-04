@@ -5,7 +5,7 @@ const Header= ()=> {
     <div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">LA COLLECTION</a>
+    <a class="navbar-brand fw-bold fs-4" href="#">LA COLLECTION</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,8 +25,12 @@ const Header= ()=> {
         </li>
       </ul>
   <div className="buttons">
-<a href="" className="btn-outline-dark">
-  <i className="fa fa-login"></i>Login</a>
+<a href="" className="btn-outline-dark ms-2">
+  <div className="fa fa-sign-in me-1">Login</div></a>
+  <a href="" className="btn-outline-dark ms-2">
+  <div className="fa fa-user-plus me-1 ms-2">Register</div></a>
+  <a href="" className="btn-outline-dark ms-2">
+  <div className="fa fa-shopping-cart me-1">Cart(0)</div></a>
   </div>
     </div>
   </div>
