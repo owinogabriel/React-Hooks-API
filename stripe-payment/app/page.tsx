@@ -26,7 +26,7 @@ export default function Home() {
       <Elements stripe={stripePromise}
                 options={{
                   mode:"payment",
-                  amount: convertTosubcurrency(0),
+                  amount: convertTosubcurrency(amount),
                   currency:"usd"
                 }} >
         <CheckoutPage amount= {amount} />
