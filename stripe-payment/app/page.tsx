@@ -1,9 +1,11 @@
+"use client"
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { error } from "console";
-
+import convertTosubcurrency from "@/lib/convertToSubcurrency"
 // import CheckoutForm from "../components/CheckoutForm";()
 // import CompletePage from "../components/CompletePage";
+import CheckoutPage from "@/components/CheckoutPage";
 
 if(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY === undefined){
   throw new Error("NEXT_PUBLIC_STRIPE_PUBLIC_KEY is not defined")
@@ -21,6 +23,14 @@ export default function Home() {
       </h2>
       </div>
       </div>
+      <Elements stripe={stripePromise}
+                options={{
+                  mode:"payment",
+                  amount: convertTosubcurrency(0),
+                  currency:"usd"
+                }} >
+        <CheckoutPage amount= {amount} />
+      </Elements>
        </main>
   );
 }
