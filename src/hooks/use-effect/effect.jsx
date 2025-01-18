@@ -20,7 +20,7 @@ const Effect = () => {
       }
     };
 
-    fetchData(); // Invoke the function
+    fetchData();
   }, []);
 
   useEffect(() => {
