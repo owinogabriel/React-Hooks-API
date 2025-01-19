@@ -8,6 +8,11 @@
 .nam{
   margin-top: 6px;
 }
+
+.count{
+  gap: 4rem;
+  padding: 4px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

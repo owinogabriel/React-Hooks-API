@@ -28,18 +28,21 @@ const Reducer = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (
-    <div>
+    <div className='count'>
       {/* Display the current count */}
       <p>Count: {state.count}</p>
+       
+      <div>
+        {/* Button to increment the count */}
+        <button onClick={() => dispatch({ type: 'increment' })}>+</button>
 
-      {/* Button to increment the count */}
-      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+        {/* Button to decrement the count */}
+        <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
 
-      {/* Button to decrement the count */}
-      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+        {/* Button to double the count */}
+        <button onClick={() => dispatch({ type: 'double' })}>*</button>
+      </div>
 
-      {/* Button to double the count */}
-      <button onClick={() => dispatch({ type: 'double' })}>*</button>
     </div>
   );
 };
